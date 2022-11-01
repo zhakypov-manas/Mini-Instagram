@@ -1,0 +1,169 @@
+body{
+    background-color: black;
+}
+
+.register-div input, select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.register-div button[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.register-div button[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.register-div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.conteiner {
+    padding-top: 45px;
+    padding-bottom: 45px;
+    width: 500px;
+    margin: 0 auto;
+    background-color: white;
+}
+.hide-comment{
+    display: none;
+}
+
+.show-commet{
+    display: block;
+}
+
+#login-form {
+    margin-left: 25%;
+}
+#posts {
+    width: 475px;
+    margin: 0 auto;
+}
+.comment-description {
+    margin-left: 12px;
+    font-size: 24px;
+    color: white;
+}
+.post {
+    position: relative;
+    margin-top: 70px !important;
+    background-color: #7c7878;
+    border: 1px solid white;
+    border-radius: 13px;
+}
+img {
+    margin: 8px 12px;
+    border-radius: 19px;
+    width: 448px;
+    height: 375px;
+}
+textarea {
+    border-radius: 30px;
+    margin-left: 140px;
+    overflow: auto;
+    resize: vertical;
+}
+
+.message-send-button{
+
+}
+
+.icons-setting {
+    font-size: 30px;
+    margin-top: 5px;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+.icon-save {
+    margin-right: 10px;
+    float: right;
+}
+
+.show-like{
+    position: absolute;
+    top: 120px;
+    left: 200px;
+    margin: auto;
+}
+
+.hide-like{
+    position: absolute;
+    top: 120px;
+    left: 200px;
+    display: none;
+    z-index: 1;
+    margin: auto;
+}
+
+.savedPost{
+    color: yellow;
+}
+
+.splash-screen{
+    width: 800px;
+    height: 400px;
+    background-color: skyblue;
+}
+
+.modal {
+    background: rgba(102, 102, 102, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.okno {
+    width: 800px;
+    height: 800px;
+    text-align: center;
+    padding: 15px;
+    border: 3px solid #0000cc;
+    border-radius: 10px;
+    color: #0000cc;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    z-index: 1000;
+    background: #fff;
+}
+.close {
+    display: inline-block;
+    border: 1px solid #0000cc;
+    color: #0000cc;
+    padding: 0 12px;
+    margin: 10px;
+    text-decoration: none;
+    background: #f2f2f2;
+    font-size: 14pt;
+    cursor:pointer;
+}
+.close:hover {background: #e6e6ff;}
+
+#modal-register {
+    display: none;
+}
+
+.register-show-button {
+    margin-left: 25%;
+}

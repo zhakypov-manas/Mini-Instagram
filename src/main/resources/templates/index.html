@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="conteiner">
+    <div class="modal" id="modal">
+        <div class="okno" id="okno">
+            Сначала войдите в свой аккаунт!<br>
+            <button id="hide-btn" class="posts-add-button" onclick="hide()">Войти</button>
+        </div>
+    </div>
+    <button class="register-show-button" type="button" onclick="showRegister()">Регистрация</button>
+    <div class="modal" id="modal-register">
+        <div class="okno" id="okno-register">
+            <div class="register-div">
+                <form action="/user/register" id="registration-form">
+                    <label for="user-name">Name</label>
+                    <input type="text" id="user-name" name="name" placeholder="Your name..">
+
+                    <label for="user-login">Login</label>
+                    <input type="text" id="user-login" name="login" placeholder="Your login..">
+
+                    <label for="user-email">Email</label>
+                    <input type="text" id="user-email" name="email" placeholder="Your email..">
+
+                    <label for="user-password">Password</label>
+                    <input type="password" id="user-password" name="password" placeholder="Your password..">
+
+                    <button type="submit" value="Submit">Регистрация</button>
+                </form>
+            </div>
+            <button id="hide-btn-register" onclick="hideRegister()">Войти</button>
+        </div>
+    </div>
+
+    <div class="addPost">
+
+        <form id="login-form">
+            <input type="file" name="img">
+            <br>
+            <input type="number" placeholder="user_id" name="user_id" hidden value="3">
+            <input type="text" placeholder="Описание" name="description">
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+    <div id="posts">
+
+    </div>
+</div>
+
+<script src="https://kit.fontawesome.com/fe556a512e.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
